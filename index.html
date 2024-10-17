@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Blog</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+
+ <script defer src="./assets/js/logic.js" type="text/javascript"></script>
+    <script defer src="./assets/js/form.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="left-column">
+            <div class="blog-title">
+                <h1>My First Blog</h1>
+            </div>
+        </div>
+ <div class="toggle-theme">
+          <span class="icon sun" onclick="toggleTheme()">☀️</span>
+        </div>
+        <div class="right-column">
+            <div class="form-container">
+                <h2>What's on your mind?</h2>
+                <form id="blog-form">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                    
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Here is the Title" required>
+                    
+                    <label for="content">Content</label>
+                    <textarea id="content" name="content" placeholder="Here is the content" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
